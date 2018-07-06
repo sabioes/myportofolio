@@ -21,4 +21,35 @@ class Welcome extends React.Component {
     }
 }
 
-ReactDOM.render(<Welcome/>, document.getElementById('app'));
+class About extends React.Component{
+    render(){
+        return (
+            <div className="shopping-list">
+              <h1>Shopping List for {this.props.name}</h1>
+              <ul>
+                <li>Instagram</li>
+                <li>WhatsApp</li>
+                <li>Oculus</li>
+              </ul>
+            </div>
+          );
+    }
+}
+
+class Expirience extends React.Component{
+    render(){
+        return (
+            <div className="shopping-list">
+              <h1>Shopping List for {this.props.name}</h1>
+              <ul>
+                <li>Instagram</li>
+                <li>WhatsApp</li>
+                <li>Oculus</li>
+              </ul>
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(<Welcome/>, document.getElementById('root'));
+ReactDOM.render(<About/>, document.getElementById('root'));
